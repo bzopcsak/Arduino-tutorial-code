@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context="com.example.boldi.bluetoothcarcontroller.MainActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:text="Forward"
+        android:id="@+id/forward_btn"
+        android:layout_marginTop="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/forward_right_btn"
+        android:layout_toStartOf="@+id/forward_right_btn" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:text="forward&#10;LEFT"
+        android:id="@+id/forward_left_btn"
+        android:layout_below="@+id/forward_btn"
+        android:layout_toLeftOf="@+id/forward_btn"
+        android:layout_toStartOf="@+id/forward_btn" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:text="forward&#10;RIGHT"
+        android:id="@+id/forward_right_btn"
+        android:layout_above="@+id/reverse_btn"
+        android:layout_toRightOf="@+id/reverse_btn"
+        android:layout_toEndOf="@+id/reverse_btn" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:text="REVERSE"
+        android:id="@+id/reverse_btn"
+        android:layout_below="@+id/forward_left_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="Connect to Bluetooth Device"
+        android:id="@+id/bluetooth_connect_btn"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
